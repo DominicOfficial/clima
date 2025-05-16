@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="weather.js"></script>
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="content">
+        <header>
+            <h1>Weather App</h1>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" class="modern-button">Switch Theme</button>
+            </div>
+        </header>
+
+        <main>
+            <!-- Current Weather Section -->
+            <section id="current-weather">
+                <h2>Current Weather</h2>
+                <div id="weather-info" class="weather-cards">
+                    <div class="weather-card">
+                        <h3>Location</h3>
+                        <p id="location"><span>Loading...</span></p>
+                    </div>
+                    <div class="weather-card">
+                        <h3>Temperature</h3>
+                        <p id="temperature"><span>--</span>°C</p>
+                    </div>
+                    <div class="weather-card">
+                        <h3>Condition</h3>
+                        <p id="condition"><span>--</span></p>
+                    </div>
+                    <div class="weather-card">
+                        <h3>Details</h3>
+                        <p id="details">
+                            Wind: <span>--</span> km/h<br>
+                            Humidity: <span>--</span>%<br>
+                            Pressure: <span>--</span> hPa
+                        </p>
+                    </div>
+                    <div class="weather-card">
+                        <h3>Sunrise & Sunset</h3>
+                        <p id="sun-times">
+                            Sunrise: <span>--</span><br>
+                            Sunset: <span>--</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Search Section -->
+            <section id="search-weather">
+                <h2>Search Weather</h2>
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button id="search-btn">Search</button>
+            </section>
+
+            <!-- Forecast Section -->
+            <section id="forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast-container">
+                    <!-- Forecast cards will be dynamically added here -->
+                </div>
+            </section>
+
+            <!-- Alerts Section -->
+            <section id="alerts">
+                <h2>Weather Alerts</h2>
+                <div id="alerts-container">
+                    <p>No alerts at the moment.</p>
+                </div>
+            </section>
+
+            <!-- News Section -->
+            <section id="weather-news">
+                <h2>Weather News</h2>
+                <div id="news-container">
+                    <p>Coming soon...</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://x.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+
+            <nav>
+                <a href="#current-weather">Current Weather</a>
+                <a href="#forecast">Forecast</a>
+                <a href="#alerts">Alerts</a>
+            </nav>
+
+            <p>Powered by <a href="mailto:dominicoigo8@gmail.com">Dominic Oigo</a> | Phone: <a href="tel:+254796060722">0796060722</a></p>
+
+            <p>&copy; 2025 Weather App. All rights reserved.</p>
+        
+        </footer>
+    </div>
+</body>
+</html>
